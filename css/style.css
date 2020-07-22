@@ -724,7 +724,6 @@ template {
 .newsletter {
   position: relative;
   padding: 98px 0 87px;
-  background-image: url(../img/newsletter-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -863,6 +862,7 @@ template {
   background-color: transparent;
   cursor: pointer;
   z-index: 99;
+  outline: none;
 }
 
 .reviews-slider__button--prev {
@@ -924,7 +924,7 @@ template {
   .container {
     max-width: 960px;
   }
-  .slider {
+  .hotel-slider {
     width: 590px;
   }
   .hotel-slider__image {
@@ -1068,12 +1068,12 @@ template {
   .reviews-slider__button--prev {
     left: 50%;
     transform: translate(-50%, 0);
-    margin-left: -65px;
+    margin-left: -85px;
   }
   .reviews-slider__button--next {
     right: 50%;
     transform: translate(50%, 0);
-    margin-right: -65px;
+    margin-right: -85px;
   }
 }
 
@@ -1110,7 +1110,7 @@ template {
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 456px) {
   .hotel {
     padding-bottom: 40px;
   }

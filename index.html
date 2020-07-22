@@ -218,9 +218,7 @@
               <button class="button booking__button">View Other Options</button>
             </div>
             <!-- /.booking -->
-            <div class="map">
-              <div id="map" style="width: 100%; height: 213px;"></div>
-            </div>
+            <div class="map" id="map"></div>
             <!-- /.map -->
           </div>
           <!-- /.hotel-container -->
@@ -230,7 +228,12 @@
       <!-- /.container -->
     </section>
     <!-- /.hotel -->
-    <section class="newsletter">
+    <section
+      class="newsletter parallax-window"
+      data-parallax="scroll"
+      data-image-src="img/newsletter-bg.jpg"
+      data-speed="0.5"
+    >
       <div class="newsletter-wrapper">
         <h2 class="newsletter-title newsletter__title">
           subscribe to our
@@ -250,7 +253,7 @@
       <!-- /.newsletter-wrapper -->
     </section>
     <!-- /.newsletter -->
-    <sectiont class="reviews">
+    <section class="reviews">
       <div class="container">
         <h2 class="reviews__title">What people thinks about us</h2>
         <div class="swiper-container reviews-slider">
@@ -329,6 +332,39 @@
               <!-- /.reviews-slider__item -->
             </div>
             <!-- /.swiper-slide -->
+            <div class="swiper-slide">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__profile">
+                  <img
+                    src="img/reviews-avatar-3.jpg"
+                    alt="Photo: Megan Fox"
+                    class="reviews-slider__avatar"
+                  />
+                  <h3 class="reviews-slider__username">Katerina Graham</h3>
+                  <span class="reviews-slider__date">Stayed 12 May, 2019</span>
+                  <div class="reviews-slider__rating">
+                    <img src="img/star.svg" alt="star" />
+                    <img src="img/star.svg" alt="star" />
+                    <img src="img/star.svg" alt="star" />
+                    <img src="img/star.svg" alt="star" />
+                    <img src="img/star.svg" alt="star" />
+                  </div>
+                  <!-- /.reviews-slider__rating -->
+                </div>
+                <!-- /.reviews-slider__profile -->
+                <p class="reviews-slider__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+                  aperiam dignissimos. Laboriosam ducimus quaerat et optio dicta
+                  ratione autem illo laudantium asperiores inventore consectetur
+                  vitae necessitatibus harum, atque quisquam cumque ab
+                  distinctio architecto tempore quam eligendi magni quod,
+                  aspernatur suscipit. Nobis illum commodi quisquam quos itaque
+                  deleniti, dignissimos quam dicta.
+                </p>
+              </div>
+              <!-- /.reviews-slider__item -->
+            </div>
+            <!-- /.swiper-slide -->
           </div>
           <!-- /.swiper-wrapper -->
 
@@ -342,7 +378,7 @@
         <!-- /.reviews-slider -->
       </div>
       <!-- /.container -->
-    </sectiont>
+    </section>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
     <script
@@ -350,5 +386,7 @@
       type="text/javascript"
     ></script>
     <script src="js/map.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>
   </body>
 </html>
