@@ -848,8 +848,14 @@ template {
   .slider {
     height: 250px;
   }
-  .hotel-slider {
+  .hotel__slider {
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .slider {
+    height: 179px;
   }
 }
 /*# sourceMappingURL=style.css.map */
