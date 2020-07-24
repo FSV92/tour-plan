@@ -985,7 +985,7 @@ template {
 }
 
 .card__button {
-  font-family: Nunito;
+  font-family: 'Nunito', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
