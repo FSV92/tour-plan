@@ -1106,6 +1106,7 @@ template {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 95px;
 }
 
 .footer__ul {
@@ -1200,6 +1201,28 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #E0E0E0;
+}
+
+.footer__other {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+}
+
+.footer__responsibility {
+  list-style: none;
+  grid-column: 2;
+  padding-left: 0;
+  justify-self: center;
+}
+
+.footer__pay {
+  justify-self: end;
+}
+
+.responsibility__item {
+  display: inline-block;
+  margin-right: 20px;
 }
 
 @media (max-width: 1200px) {
