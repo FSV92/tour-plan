@@ -374,6 +374,7 @@ template {
 
 .navbar-top__menu-button {
   display: none;
+  outline: none;
 }
 
 .navbar__search {
