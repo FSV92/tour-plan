@@ -114,9 +114,6 @@
                     display: none
                 &--visible
                     display: flex
-        &__user
-            flex-direction: column
-            justify-content: center
         &-bottom
             display: none
             position: fixed
@@ -134,6 +131,13 @@
                 &--mobile
                     &--visible
                         display: block
+            &__user, &__search
+                &--mobile
+                    &--visible
+                        display: flex 
+            &__user
+                flex-direction: column
+                justify-content: center           
     .menu
         &-button
             display: flex
@@ -319,6 +323,14 @@
             height: 179px
     .newsletter
         min-height: 320px
+    .navbar
+        &-menu
+            &__input
+                width: 100%
+            &__item
+                &--mobile
+                    &--visible
+                        width: 100%
 
 
 

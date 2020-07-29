@@ -1328,10 +1328,6 @@ template {
   .navbar__user--mobile--visible, .navbar__search--mobile--visible {
     display: flex;
   }
-  .navbar__user {
-    flex-direction: column;
-    justify-content: center;
-  }
   .navbar-bottom {
     display: none;
     position: fixed;
@@ -1352,6 +1348,13 @@ template {
   }
   .navbar-menu__item--mobile--visible {
     display: block;
+  }
+  .navbar-menu__user--mobile--visible, .navbar-menu__search--mobile--visible {
+    display: flex;
+  }
+  .navbar-menu__user {
+    flex-direction: column;
+    justify-content: center;
   }
   .menu-button {
     display: flex;
@@ -1583,6 +1586,12 @@ template {
   }
   .newsletter {
     min-height: 320px;
+  }
+  .navbar-menu__input {
+    width: 100%;
+  }
+  .navbar-menu__item--mobile--visible {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
