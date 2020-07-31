@@ -8,7 +8,10 @@ require 'phpmailer/Exception.php';
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
+$email = $_POST['email'];
 
+// Проверка заполненности полей
+if(empty($email)){   
 // Формирование самого письма
 $title = "Новое обращение Best Tour Plan";
 $body = "
@@ -17,6 +20,18 @@ $body = "
 <b>Телефон:</b> $phone<br><br>
 <b>Сообщение:</b><br>$message
 ";
+// Отображение результата
+header('Location: thankyou.html');
+} else {
+    // Формирование самого письма
+$title = "Запрос на подписку Best Tour Plan";
+$body = "
+<h2>Запрос на подписку</h2>
+<b>Почта:</b> $email<br>
+";
+// Отображение результата
+header('Location: subscribe.html');
+};
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -52,5 +67,4 @@ else {$result = "error";}
     $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
 }
 
-// Отображение результата
-header('Location: thankyou.html');
+
