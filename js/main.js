@@ -1,31 +1,62 @@
-var hotelSlider = new Swiper('.hotel-slider', {
-    // Optional parameters
-    loop: true,
+$(document).ready(function () {
+    var hotelSlider = new Swiper('.hotel-slider', {
+        // Optional parameters
+        loop: true,
 
-    // Navigation arrows
-    navigation: {
-        nextEl: '.hotel-slider__button--next',
-        prevEl: '.hotel-slider__button--prev',
-    },
-    keyboard: {
-        enabled: true,
-    },
-});
-var reviewsSlider = new Swiper('.reviews-slider', {
-    // Optional parameters
-    loop: true,
+        // Navigation arrows
+        navigation: {
+            nextEl: '.hotel-slider__button--next',
+            prevEl: '.hotel-slider__button--prev',
+        },
+        keyboard: {
+            enabled: true,
+        },
+    });
+    var reviewsSlider = new Swiper('.reviews-slider', {
+        // Optional parameters
+        loop: true,
 
-    // Navigation arrows
-    navigation: {
-        nextEl: '.reviews-slider__button--next',
-        prevEl: '.reviews-slider__button--prev',
-    },
-    keyboard: {
-        enabled: true,
-    },
-});
+        // Navigation arrows
+        navigation: {
+            nextEl: '.reviews-slider__button--next',
+            prevEl: '.reviews-slider__button--prev',
+        },
+        keyboard: {
+            enabled: true,
+        },
+    });
 
-var menuButton = document.querySelector(".menu-button");
-menuButton.addEventListener('click', function () {
-    document.querySelector(".navbar-bottom").classList.toggle("navbar-bottom--visible");
+    var menuButton = $(".menu-button");
+    menuButton.on('click', function () {
+        $(".navbar-bottom").toggleClass("navbar-bottom--visible");
+    });
+
+    var modalButton = $('[data-toggle=modal]');
+    var closeModalButton = $(".modal__close");
+    var modalOverlay = $(".modal__overlay");
+    var modalDialog = $(".modal__dialog");
+    modalButton.on('click', openModal);
+    closeModalButton.on('click', closeModal);
+    $(this).on('keydown', closeModalKey);
+
+    function openModal() {
+        var targetModal = $(this).attr("data-href")
+        $(targetModal).find(".modal__overlay").addClass("modal__overlay--visible");
+        $(targetModal).find(".modal__dialog").addClass("modal__dialog--visible");
+    };
+
+    function closeModal(evt) {
+        evt.preventDefault();
+        modalOverlay.removeClass('modal__overlay--visible');
+        modalDialog.removeClass('modal__dialog--visible');
+    };
+
+    function closeModalKey(evt) {
+        evt.preventDefault();
+        if (evt.keyCode === 27) {
+            modalOverlay.removeClass('modal__overlay--visible');
+            modalDialog.removeClass('modal__dialog--visible');
+        }
+    };
+
 });
