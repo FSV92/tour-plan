@@ -52,11 +52,9 @@ $(document).ready(function () {
     };
 
     function closeModalKey(evt) {
-        evt.preventDefault();
         if (evt.keyCode === 27) {
             modalOverlay.removeClass('modal__overlay--visible');
             modalDialog.removeClass('modal__dialog--visible');
         }
     };
-
 });
