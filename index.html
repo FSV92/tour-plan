@@ -29,7 +29,7 @@
           >
             <input
               type="text"
-              class="search__input"
+              class="input search__input"
               placeholder="Search Location"
             />
             <button class="search__button">
@@ -260,7 +260,18 @@
               </button>
             </div>
             <!-- /.booking -->
-            <div class="map" id="map"></div>
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.5542624602094!2d98.29918751128115!3d7.8369078747072995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305025650c33dbab%3A0xa67a542329d011e1!2z0J_RhdGD0LrQtdGCLCDQmtCw0YDQvtC9LCDQntGC0LXQu9GMINCl0LjQu9GC0L7QvQ!5e0!3m2!1sru!2sru!4v1596217094195!5m2!1sru!2sru"
+                width="347px"
+                height="213px"
+                frameborder="0"
+                style="border: 0;"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
+            </div>
             <!-- /.map -->
           </div>
           <!-- /.hotel-container -->
@@ -619,7 +630,7 @@
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-            <form action="#" method="POST" class="form footer__form">
+            <form action="send.php" method="POST" class="form footer__form">
               <input
                 type="text"
                 class="input footer__input"
@@ -744,11 +755,6 @@
     <!-- /.modal -->
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
-    <script
-      src="https://api-maps.yandex.ru/2.1/?apikey=7d50d0e7-b6ae-4f3a-b8a7-e85c8d7b0d89&lang=ru_RU"
-      type="text/javascript"
-    ></script>
-    <script src="js/map.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/main.js"></script>
