@@ -37,7 +37,7 @@ $(document).ready(function () {
     var modalDialog = $(".modal__dialog");
     modalButton.on('click', openModal);
     closeModalButton.on('click', closeModal);
-    $(this).on('keydown', closeModalKey);
+    $(modalDialog).on('keydown', closeModalKey);
 
     function openModal() {
         var targetModal = $(this).attr("data-href")
