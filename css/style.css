@@ -1702,9 +1702,9 @@ template {
   }
 }
 
-@media (orientation: landscape) and (max-width: 768px) {
+@media (orientation: landscape) {
   .navbar-menu {
-    padding: 10% 0;
+    padding: 7% 0;
     flex-direction: row;
     flex-wrap: wrap;
   }
