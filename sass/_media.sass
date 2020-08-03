@@ -331,7 +331,7 @@
             order: 1
         &__info
             flex-basis: 100%
-            margin-bottom: 15px  
+            margin-top: 15px
 @media (max-width: 456px)
     .hotel
         padding-bottom: 40px
@@ -347,56 +347,60 @@
                 &--mobile
                     &--visible
                         width: 100%
-/* 
- @media (orientation:landscape)
- .navbar
- &-menu
- padding: 7% 0
- flex-direction: row
- flex-wrap: wrap
- &__item--mobile--visible
- width: 50%
- &__user--mobile--visible
- flex-direction: row
- align-content: center
- justify-content: flex-start
- &-top
- padding: 10px 0
- &-bottom
- &--visible
- top: 35px
- padding-top: 0
- .user
- &__avatar
- margin-right: 20px
- &__name--light
- margin-top: 0
- .modal
- &__dialog
- max-width: 576px
- width: 92%
- height: 92%
- padding: 1%
- &__close
- top: 3%
- &__title
- margin-bottom: 1%
- font-size: 14px
- line-height: 20px
- &__form
- height: 92%
- &__input
- height: 10%
- margin-bottom: 2%
- &__message
- height: 30%
- margin-bottom: 2%
- &__button
- min-height: 10px
- height: 10%
- padding: 0
- */
-    
+@media (orientation:landscape)
+    .navbar
+        &-menu
+            padding: 7% 0
+            flex-direction: row
+            flex-wrap: wrap
+            justify-content: flex-start
+            &__item
+                flex-basis: 25%  
+                &--mobile--visible
+                    width: 50%
+            &__user--mobile--visible
+                flex-direction: row
+                align-content: center
+                justify-content: flex-start
+            &-top
+                padding: 10px 0
+            &-bottom
+                &--visible
+                    top: 35px
+                    padding-top: 0
+    .user
+        &__avatar
+            margin-right: 20px
+        &__name--light
+            margin-top: 0
+    .modal
+        &__dialog
+            max-width: 576px
+            width: 92%
+            height: 92%
+            padding: 1%
+        &__close
+            top: 3%
+        &__title
+            margin-bottom: 0
+            font-size: 14px
+            line-height: 20px
+        &__form
+            height: 92%
+        &__input
+            height: 10%
+            margin-top: 2%
+            padding: 10px 15px
+        &__message
+            min-height: 20%
+            margin-top: 2%
+            padding: 10px 15px
+        &__button
+            min-height: 10px
+            height: 10%
+            padding: 0
+            margin-top: 2%
+        
 
 
-            
+                
