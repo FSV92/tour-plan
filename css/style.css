@@ -1714,31 +1714,7 @@ template {
   }
 }
 
-@media (orientation: landscape) {
-  .navbar-menu {
-    padding: 7% 0;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
-  .navbar-menu__item {
-    flex-basis: 25%;
-  }
-  .navbar-menu__item--mobile--visible {
-    width: 50%;
-  }
-  .navbar-menu__user--mobile--visible {
-    flex-direction: row;
-    align-content: center;
-    justify-content: flex-start;
-  }
-  .navbar-menu-top {
-    padding: 10px 0;
-  }
-  .navbar-menu-bottom--visible {
-    top: 35px;
-    padding-top: 0;
-  }
+@media (orientation: landscape) and (max-height: 768px) {
   .user__avatar {
     margin-right: 20px;
   }
@@ -1777,6 +1753,33 @@ template {
     height: 10%;
     padding: 0;
     margin-top: 2%;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 768px) {
+  .navbar-menu {
+    padding: 7% 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .navbar-menu__item {
+    flex-basis: 25%;
+  }
+  .navbar-menu__item--mobile--visible {
+    width: 50%;
+  }
+  .navbar-menu__user--mobile--visible {
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+  }
+  .navbar-menu-top {
+    padding: 10px 0;
+  }
+  .navbar-menu-bottom--visible {
+    top: 35px;
+    padding-top: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

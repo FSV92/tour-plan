@@ -77,4 +77,6 @@ $(document).ready(function () {
             },
         });
     })
+    //Маска телефона
+    $('input[type=tel]').mask('+7(000)000-00-00');
 });
