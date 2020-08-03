@@ -61,6 +61,11 @@ textarea {
   flex-wrap: wrap;
 }
 
+.invalid {
+  color: #EC1F46;
+  border-bottom: 1px solid #EC1F46;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1155,6 +1160,10 @@ template {
 }
 
 .footer__input {
+  width: 100%;
+}
+
+.footer__input-group {
   margin-bottom: 15px;
   flex-basis: 48%;
 }
@@ -1254,20 +1263,23 @@ template {
   font-size: 18px;
   line-height: 23px;
   margin-top: 0;
-  margin-bottom: 15px;
   text-transform: uppercase;
   text-align: center;
 }
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__message {
   width: 100%;
   min-height: 123px;
-  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.modal__button {
+  margin-top: 15px;
 }
 
 .modal__info {
@@ -1297,7 +1309,7 @@ template {
   .footer__icon-wrapper {
     min-width: 30px;
   }
-  .footer__input {
+  .footer__input-group {
     flex-basis: 100%;
   }
 }
@@ -1363,8 +1375,8 @@ template {
     grid-template-columns: 1fr 1fr 1.25fr 1.25fr 1fr 1fr;
     grid-row-gap: 40px;
   }
-  .footer__input {
-    flex-basis: 49%;
+  .footer__input-group {
+    flex-basis: 48%;
   }
   .footer__logo {
     grid-row: 1 / 2;
@@ -1549,7 +1561,7 @@ template {
     width: 49%;
     height: 255px;
   }
-  .footer__input {
+  .footer__input-group {
     flex-basis: 48%;
   }
   .footer__contact-details {
@@ -1634,7 +1646,7 @@ template {
     grid-row: 5;
     grid-column: 1;
   }
-  .footer__input {
+  .footer__input-group {
     flex-basis: 100%;
   }
   .footer__form {
@@ -1702,62 +1714,53 @@ template {
   }
 }
 
-@media (orientation: landscape) {
-  .navbar-menu {
-    padding: 7% 0;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .navbar-menu__item--mobile--visible {
-    width: 50%;
-  }
-  .navbar-menu__user--mobile--visible {
-    flex-direction: row;
-    align-content: center;
-    justify-content: flex-start;
-  }
-  .navbar-top {
-    padding: 10px 0;
-  }
-  .navbar-bottom--visible {
-    top: 35px;
-    padding-top: 0;
-  }
-  .user__avatar {
-    margin-right: 20px;
-  }
-  .user__name--light {
-    margin-top: 0;
-  }
-  .modal__dialog {
-    max-width: 576px;
-    width: 92%;
-    height: 92%;
-    padding: 1%;
-  }
-  .modal__close {
-    top: 3%;
-  }
-  .modal__title {
-    margin-bottom: 1%;
-    font-size: 14px;
-    line-height: 20px;
-  }
-  .modal__form {
-    height: 92%;
-  }
-  .modal__input {
-    height: 10%;
-    margin-bottom: 2%;
-  }
-  .modal__message {
-    height: 30%;
-    margin-bottom: 2%;
-  }
-  .modal__button {
-    min-height: 10px;
-    height: 10%;
-    padding: 0;
-  }
-}
+/*
+ @media (orientation:landscape)
+ .navbar
+ &-menu
+ padding: 7% 0
+ flex-direction: row
+ flex-wrap: wrap
+ &__item--mobile--visible
+ width: 50%
+ &__user--mobile--visible
+ flex-direction: row
+ align-content: center
+ justify-content: flex-start
+ &-top
+ padding: 10px 0
+ &-bottom
+ &--visible
+ top: 35px
+ padding-top: 0
+ .user
+ &__avatar
+ margin-right: 20px
+ &__name--light
+ margin-top: 0
+ .modal
+ &__dialog
+ max-width: 576px
+ width: 92%
+ height: 92%
+ padding: 1%
+ &__close
+ top: 3%
+ &__title
+ margin-bottom: 1%
+ font-size: 14px
+ line-height: 20px
+ &__form
+ height: 92%
+ &__input
+ height: 10%
+ margin-bottom: 2%
+ &__message
+ height: 30%
+ margin-bottom: 2%
+ &__button
+ min-height: 10px
+ height: 10%
+ padding: 0
+ */
 /*# sourceMappingURL=style.css.map */

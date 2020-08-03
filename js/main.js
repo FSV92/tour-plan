@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    //Слайдеры 
     var hotelSlider = new Swiper('.hotel-slider', {
         // Optional parameters
         loop: true,
@@ -25,12 +26,12 @@ $(document).ready(function () {
             enabled: true,
         },
     });
-
+    //Мобильное меню
     var menuButton = $(".menu-button");
     menuButton.on('click', function () {
         $(".navbar-bottom").toggleClass("navbar-bottom--visible");
     });
-
+    //Модальные окна
     var modalButton = $('[data-toggle=modal]');
     var closeModalButton = $(".modal__close");
     var modalOverlay = $(".modal__overlay");
@@ -57,4 +58,23 @@ $(document).ready(function () {
             modalDialog.removeClass('modal__dialog--visible');
         }
     };
+    //Обработка форм
+    $('.form').each(function () {
+        $(this).validate({
+            errorClass: "invalid",
+            messages: {
+                name: {
+                    required: "Name required",
+                    minlength: "Minimum of 2 letters",
+                },
+                email: {
+                    required: "Email required",
+                    email: "Your email address must be in the format of name@domain.com",
+                },
+                phone: {
+                    required: "Phone required"
+                },
+            },
+        });
+    })
 });

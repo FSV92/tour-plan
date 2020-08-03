@@ -11,7 +11,7 @@ $message = $_POST['message'];
 $email = $_POST['email'];
 
 // Проверка заполненности полей
-if(empty($email)){   
+if(empty($name)){   
 // Формирование самого письма
 $title = "Новое обращение Best Tour Plan";
 $body = "

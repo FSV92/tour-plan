@@ -16,7 +16,8 @@
             &-wrapper
                 min-width: 30px
         &__input
-            flex-basis: 100%
+            &-group
+                flex-basis: 100%
 @media (max-width: 992px)
     .container,
     .newsletter-wrapper
@@ -68,7 +69,8 @@
             grid-template-columns: 1fr 1fr 1.25fr 1.25fr 1fr 1fr
             grid-row-gap: 40px
         &__input
-            flex-basis: 49%
+            &-group
+                flex-basis: 48%
         &__logo
             grid-row: 1 / 2
             grid-column: span 2
@@ -225,7 +227,8 @@
         height: 255px
     .footer
         &__input
-            flex-basis: 48%
+            &-group
+                flex-basis: 48%
         &__contact
             &-details
                 grid-column: span 6
@@ -292,7 +295,8 @@
             grid-row: 5
             grid-column: 1
         &__input
-            flex-basis: 100%
+            &-group
+                flex-basis: 100%
         &__form
             margin-bottom: 30px
         &__contact
@@ -343,53 +347,55 @@
                 &--mobile
                     &--visible
                         width: 100%
-@media (orientation:landscape)
-    .navbar
-        &-menu
-            padding: 7% 0
-            flex-direction: row
-            flex-wrap: wrap
-            &__item--mobile--visible
-                width: 50%
-            &__user--mobile--visible
-                flex-direction: row
-                align-content: center
-                justify-content: flex-start
-        &-top
-            padding: 10px 0
-        &-bottom
-            &--visible
-                top: 35px
-                padding-top: 0
-    .user
-        &__avatar
-            margin-right: 20px
-        &__name--light
-            margin-top: 0
-    .modal
-        &__dialog
-            max-width: 576px
-            width: 92%
-            height: 92%
-            padding: 1%
-        &__close
-            top: 3%
-        &__title
-            margin-bottom: 1%
-            font-size: 14px
-            line-height: 20px
-        &__form
-            height: 92%
-        &__input
-            height: 10%
-            margin-bottom: 2%
-        &__message
-            height: 30%
-            margin-bottom: 2%
-        &__button
-            min-height: 10px
-            height: 10%
-            padding: 0
+/* 
+ @media (orientation:landscape)
+ .navbar
+ &-menu
+ padding: 7% 0
+ flex-direction: row
+ flex-wrap: wrap
+ &__item--mobile--visible
+ width: 50%
+ &__user--mobile--visible
+ flex-direction: row
+ align-content: center
+ justify-content: flex-start
+ &-top
+ padding: 10px 0
+ &-bottom
+ &--visible
+ top: 35px
+ padding-top: 0
+ .user
+ &__avatar
+ margin-right: 20px
+ &__name--light
+ margin-top: 0
+ .modal
+ &__dialog
+ max-width: 576px
+ width: 92%
+ height: 92%
+ padding: 1%
+ &__close
+ top: 3%
+ &__title
+ margin-bottom: 1%
+ font-size: 14px
+ line-height: 20px
+ &__form
+ height: 92%
+ &__input
+ height: 10%
+ margin-bottom: 2%
+ &__message
+ height: 30%
+ margin-bottom: 2%
+ &__button
+ min-height: 10px
+ height: 10%
+ padding: 0
+ */
     
 
 
