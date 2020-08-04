@@ -649,6 +649,7 @@
                   placeholder="Phone Number*"
                   name="phone"
                   required
+                  minlength="16"
                 />
               </div>
               <!-- /.footer__input-group -->
@@ -693,28 +694,38 @@
         /></a>
         <h3 class="modal__title modal__title--mb-3">Booking</h3>
         <form action="send.php" method="POST" class="form modal__form">
-          <input
-            type="text"
-            class="input modal__input"
-            placeholder="Your Full Name*"
-            name="name"
-            required
-            minlength="2"
-          />
-          <input
-            type="tel"
-            class="input modal__input"
-            placeholder="Phone Number*"
-            name="phone"
-            required
-          />
-          <input
-            type="email"
-            class="input modal__input"
-            placeholder="Email*"
-            name="email"
-            required
-          />
+          <div class="modal__input-group">
+            <input
+              type="text"
+              class="input modal__input"
+              placeholder="Your Full Name*"
+              name="name"
+              required
+              minlength="2"
+            />
+          </div>
+          <!-- /.modal__input-group -->
+          <div class="modal__input-group">
+            <input
+              type="tel"
+              class="input modal__input"
+              placeholder="Phone Number*"
+              name="phone"
+              required
+              minlength="16"
+            />
+          </div>
+          <!-- /.modal__input-group -->
+          <div class="modal__input-group">
+            <input
+              type="email"
+              class="input modal__input"
+              placeholder="Email*"
+              name="email"
+              required
+            />
+          </div>
+          <!-- /.modal__input-group -->
           <textarea
             class="message modal__message"
             placeholder="Message"
@@ -736,28 +747,38 @@
         /></a>
         <h3 class="modal__title modal__title--mb-3">Send us a feedback</h3>
         <form action="send.php" method="POST" class="form modal__form">
-          <input
-            type="text"
-            class="input modal__input"
-            placeholder="Your Full Name*"
-            name="name"
-            required
-            minlength="2"
-          />
-          <input
-            type="tel"
-            class="input modal__input"
-            placeholder="Phone Number*"
-            name="phone"
-            required
-          />
-          <input
-            type="email"
-            class="input modal__input"
-            placeholder="Email*"
-            name="email"
-            required
-          />
+          <div class="modal__input-group">
+            <input
+              type="text"
+              class="input modal__input"
+              placeholder="Your Full Name*"
+              name="name"
+              required
+              minlength="2"
+            />
+          </div>
+          <!-- /.modal__input-group -->
+          <div class="modal__input-group">
+            <input
+              type="tel"
+              class="input modal__input"
+              placeholder="Phone Number*"
+              name="phone"
+              required
+              minlength="16"
+            />
+          </div>
+          <!-- /.modal__input-group -->
+          <div class="modal__input-group">
+            <input
+              type="email"
+              class="input modal__input"
+              placeholder="Email*"
+              name="email"
+              required
+            />
+          </div>
+          <!-- /.modal__input-group -->
           <textarea
             class="message modal__message"
             placeholder="Message"
