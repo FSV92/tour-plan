@@ -1754,15 +1754,17 @@ template {
     height: 92%;
   }
   .modal__input {
+    height: 70%;
     padding: 10px 15px;
   }
   .modal__input-group {
-    height: 10%;
+    height: 20%;
+    margin-top: 0;
   }
   .modal__message {
     min-height: 20%;
-    margin-top: 2%;
     padding: 10px 15px;
+    margin-top: 0;
   }
   .modal__button {
     min-height: 10px;
