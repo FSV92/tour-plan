@@ -1169,7 +1169,7 @@ template {
   position: relative;
   margin-bottom: 15px;
   flex-basis: 48%;
-  height: 65px;
+  height: 50px;
 }
 
 .footer__message {
@@ -1210,7 +1210,7 @@ template {
   border-bottom: 1px solid red;
   font-size: 11px;
   position: absolute;
-  bottom: -4px;
+  bottom: -14px;
   left: 0;
 }
 
