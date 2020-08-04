@@ -11,7 +11,16 @@ $message = $_POST['message'];
 $email = $_POST['email'];
 
 // Проверка заполненности полей
-if(empty($name)){   
+if(empty($name)){
+    // Формирование самого письма
+$title = "Запрос на подписку Best Tour Plan";
+$body = "
+<h2>Запрос на подписку</h2>
+<b>Почта:</b> $email<br>
+";
+// Отображение результата
+header('Location: subscribe.html');
+} else {   
 // Формирование самого письма
 $title = "Новое обращение Best Tour Plan";
 $body = "
@@ -22,15 +31,6 @@ $body = "
 ";
 // Отображение результата
 header('Location: thankyou.html');
-} else {
-    // Формирование самого письма
-$title = "Запрос на подписку Best Tour Plan";
-$body = "
-<h2>Запрос на подписку</h2>
-<b>Почта:</b> $email<br>
-";
-// Отображение результата
-header('Location: subscribe.html');
 };
 
 // Настройки PHPMailer
