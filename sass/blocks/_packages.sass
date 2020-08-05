@@ -1,0 +1,121 @@
+.packages
+    padding-top: 40px
+    padding-bottom: 70px
+    position: relative
+    &__title
+        font-weight: bold
+        font-size: 36px
+        line-height: 45px
+        text-align: center
+        text-transform: uppercase
+        margin-bottom: 65px
+    &-grid
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-template-rows: repeat(2, 500px)
+        grid-gap: 30px
+        grid-auto-rows: auto
+.package
+    min-height: 500px    
+    display: flex
+    flex-wrap: wrap
+    border-radius: 8px
+    overflow: hidden
+    &--main
+        grid-column: span 2
+    &__container
+        position: relative
+        width: 350px
+        height: 250px
+        &--main
+            flex-basis: 50%
+            height: 500px
+    &__image
+        object-fit: cover
+        height: 100%
+        width: 100%
+    &__offer
+        left: 0
+        top: 26px
+        position: absolute
+        background-color: $primary
+        color: $light
+        border-radius: 0px 4px 4px 0px
+        padding: 4px 9px
+        font-style: normal
+        font-weight: 600
+        font-size: 8px
+        line-height: 10px
+        &--main
+            padding: 8px 11px
+            font-style: normal
+            font-weight: 600
+            font-size: 12px
+            line-height: 15px
+    &__info
+        display: flex
+        align-content: space-between
+        justify-content: space-between
+        flex-wrap: wrap
+        height: 250px
+        background-color: $dark
+        color: $light
+        padding: 30px 21px 25px 32px
+        &--main
+            flex-basis: 50%
+            height: 500px
+            padding: 46px 21px 30px 44px
+    &__rating
+        flex-basis: 100%
+    &__title
+        flex-basis: 100%
+        margin: 0
+        font-style: normal
+        font-weight: bold
+        font-size: 18px
+        line-height: 23px
+    &__text
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 160%
+    &__room
+        margin-bottom: 11px
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+    &__pricetag
+        flex-basis: 50%
+        display: flex
+        flex-wrap: wrap
+    &__price
+        &--old
+            width: 100%
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 18px
+            text-decoration: line-through
+        &--new
+            font-style: normal
+            font-weight: bold
+            font-size: 24px
+            line-height: 30px
+    &__button
+        flex-basis: 50%
+        align-self: flex-end
+        min-height: 40px
+        border-radius: 4px
+        padding: 11px 26px
+        background-color: $primary
+        color: $light
+        border: none
+        font-family: 'Nunito', sans-serif
+        font-style: normal
+        font-weight: 600
+        font-size: 14px
+        line-height: 19px
+
+
+
