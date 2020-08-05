@@ -61,7 +61,7 @@ $(document).ready(function () {
   //Обработка форм
   $(".form").each(function () {
     $(this).validate({
-      errorClass: "invalid animate__animated animate__shakeX",
+      errorClass: "invalid shakeX",
       messages: {
         name: {
           required: "Name required",
@@ -80,6 +80,4 @@ $(document).ready(function () {
   });
   //Маска телефона
   $("input[type=tel]").mask("+7(000)000-00-00");
-  //AOS анимация 
-  AOS.init();
 });

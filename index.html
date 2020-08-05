@@ -8,14 +8,11 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&family=Nunito:wght@400;600;800&display=swap"
-      rel="stylesheet"
+      rel="preload"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/aos.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
-    />
+    <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
@@ -23,11 +20,7 @@
     <header class="navbar navbar--mobile--fixed">
       <div class="container">
         <div class="navbar-top">
-          <a
-            href="index.html"
-            class="logo"
-            data-aos="fade-right"
-            data-aos-delay="400"
+          <a href="index.html" class="logo"
             ><img
               src="img/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -37,8 +30,6 @@
           <form
             action="#"
             class="search navbar__search navbar__search--mobile--hidden"
-            data-aos="zoom-in-up"
-            data-aos-delay="400"
           >
             <input
               type="text"
@@ -50,12 +41,7 @@
             </button>
           </form>
 
-          <a
-            href="#"
-            class="user navbar__user navbar__user--mobile--hidden"
-            data-aos="fade-left"
-            data-aos-delay="400"
-          >
+          <a href="#" class="user navbar__user navbar__user--mobile--hidden">
             <img
               src="img/user-avatar.jpg"
               alt="Avatar: Nathan"
@@ -279,13 +265,14 @@
             </div>
             <!-- /.booking -->
             <div class="map">
+              <img src="img/map.jpg" alt="Map" class="map__image" />
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.5542624602094!2d98.29918751128115!3d7.8369078747072995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305025650c33dbab%3A0xa67a542329d011e1!2z0J_RhdGD0LrQtdGCLCDQmtCw0YDQvtC9LCDQntGC0LXQu9GMINCl0LjQu9GC0L7QvQ!5e0!3m2!1sru!2sru!4v1596217094195!5m2!1sru!2sru"
-                class="map__iframe"
                 style="border: 0;"
                 allowfullscreen=""
                 aria-hidden="false"
                 tabindex="0"
+                class="map__iframe"
               ></iframe>
             </div>
             <!-- /.map -->
@@ -297,12 +284,7 @@
       <!-- /.container -->
     </section>
     <!-- /.hotel -->
-    <section
-      class="newsletter parallax-window"
-      data-parallax="scroll"
-      data-image-src="img/newsletter-bg.jpg"
-      data-speed="0.5"
-    >
+    <section class="newsletter">
       <div class="newsletter-wrapper">
         <h2 class="newsletter-title newsletter__title">
           subscribe to our
@@ -457,11 +439,7 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div
-            class="card activities__card"
-            data-aos="zoom-in-right"
-            data-aos-delay="300"
-          >
+          <div class="card activities__card">
             <img
               src="img/activity-1.jpg"
               alt="The curious corner of chamarel"
@@ -471,11 +449,7 @@
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div
-            class="card activities__card"
-            data-aos="zoom-in-up"
-            data-aos-delay="500"
-          >
+          <div class="card activities__card">
             <img
               src="img/activity-2.jpg"
               alt="Gymkhana club golf course"
@@ -485,11 +459,7 @@
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div
-            class="card activities__card"
-            data-aos="zoom-in-down"
-            data-aos-delay="700"
-          >
+          <div class="card activities__card">
             <img
               src="img/activity-3.jpg"
               alt="Tamarind falls hiking trip - full day"
@@ -499,11 +469,7 @@
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div
-            class="card activities__card"
-            data-aos="zoom-in-left"
-            data-aos-delay="900"
-          >
+          <div class="card activities__card">
             <img
               src="img/activity-4.jpg"
               alt="The blue marine discovery quest"
@@ -825,11 +791,10 @@
     <!-- /.modal -->
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/parallax.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>-->
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
-    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
