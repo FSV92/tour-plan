@@ -11,6 +11,7 @@
     .card
         width: 230px
         height: 230px
+        padding: 18px 14px
     .footer
         &__icon
             &-wrapper
@@ -29,8 +30,9 @@
             padding-top: 30px
             padding-bottom: 30px
         &__search
-            margin-left: auto
+            margin-left: 45px
         &-menu
+            justify-content: space-evenly
             padding-top: 22px
             padding-bottom: 22px
             &__item
@@ -43,7 +45,7 @@
         &__input
             width: 340px     
     .hotel
-        padding-bottom: 45px
+        padding-bottom: 40px
         &-grid
             flex-direction: column  
         &__slider
@@ -59,10 +61,15 @@
     .packages
         &-grid
             grid-template-columns: repeat(2, 1fr)
+        &__title
+            font-size: 30px
+            line-height: 38px
     .reviews
         &__title
             margin-top: 22px
             margin-bottom: 45px
+            font-size: 30px
+            line-height: 38px
         &-slider
             &__item
                 max-width: 580px
@@ -75,22 +82,25 @@
     .card
         width: 340px
         height: 255px
+        padding: 24px 26px
     .footer
         padding-top: 70px
         &-wrapper
             grid-template-columns: 1fr 1fr 1.25fr 1.25fr 1fr 1fr
-            grid-row-gap: 40px
+            grid-row-gap: 46px
         &__input
             &-group
                 flex-basis: 48%
         &__logo
+            width: 104px
             grid-row: 1 / 2
-            grid-column: span 2
+            grid-column: span 1
         &__social
             &-network
                 grid-row: 1 / 2
-                grid-column: span 4
+                grid-column: 2 / 6
                 align-self: center
+                margin-left: 67px
         &__categories
             grid-row: 2/3
             grid-column: span 2
@@ -105,6 +115,7 @@
             &-form
                 grid-column: span 5
                 grid-row: 4
+                width: 91%
         &__link        
             &:hover
                 color: #BDBDBD
@@ -338,6 +349,11 @@
         &__title
             font-size: 18px
             line-height: 23px
+        &__card
+            &--second
+                order: 1
+            &--fourth
+                order: 2
     .card
         width: 100%
     .footer
