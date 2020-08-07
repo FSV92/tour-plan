@@ -30,14 +30,17 @@ $(document).ready(function () {
   var menuButton = $(".menu-button");
   menuButton.on("click", function () {
     $(".navbar-bottom").toggleClass("navbar-bottom--visible");
+    $("body").toggleClass("lock-scroll");
   });
   //Модальные окна
   var modalButton = $("[data-toggle=modal]");
   var closeModalButton = $(".modal__close");
   var modalOverlay = $(".modal__overlay");
   var modalDialog = $(".modal__dialog");
+  var modalForm = $(".modal__form");
   modalButton.on("click", openModal);
   closeModalButton.on("click", closeModal);
+  modalOverlay.on("click", closeModal);
   $(this).on("keydown", closeModalKey);
 
   function openModal() {
@@ -50,12 +53,14 @@ $(document).ready(function () {
     evt.preventDefault();
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
+    modalForm[0].reset();
   }
 
   function closeModalKey(evt) {
     if (evt.keyCode === 27) {
       modalOverlay.removeClass("modal__overlay--visible");
       modalDialog.removeClass("modal__dialog--visible");
+      modalForm[0].reset();
     }
   }
   //Обработка форм
