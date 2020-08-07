@@ -61,7 +61,7 @@ $(document).ready(function () {
   //Обработка форм
   $(".form").each(function () {
     $(this).validate({
-      errorClass: "invalid shakeX",
+      errorClass: "invalid",
       messages: {
         name: {
           required: "Name required",
